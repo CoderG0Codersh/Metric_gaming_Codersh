@@ -48,7 +48,6 @@ $( document ).ready( function ()
             if ( pageYOffset >= section_top )
             {
                 current = section.getAttribute( 'id' );
-
             }
         } );
 
@@ -120,6 +119,14 @@ $( document ).ready( function ()
             userInterfaceTExt.style.right = `${ userInter_value }px`;
         }
 
+        // user all product text
+        let all_product_text = document.getElementById( 'all_product_scroll_text' );
+        let all_product_text_scroll = all_product_text.getBoundingClientRect().top;
+        if ( windows_height >= ( all_product_text_scroll ) )
+        {
+            let all_product_value = window.scrollY - 7500;
+            all_product_text.style.right = `${ all_product_value }px`;
+        }
     } );
 
 

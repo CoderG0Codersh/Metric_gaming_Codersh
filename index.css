@@ -973,6 +973,7 @@ nav .logo_image {
     transition: 0.3s all !important;
     font-size: 15px;
     margin-top: 30px;
+    margin-bottom: 11px;
 }
 
 .product_button_dark:hover {
@@ -1431,7 +1432,8 @@ nav .logo_image {
     height: 100vh;
     background-size: cover;
     background-position: 50%;
-
+    position: relative;
+    overflow: hidden;
 }
 
 .all_product .container {
@@ -1465,6 +1467,19 @@ nav .logo_image {
 
 .all_product_content .text .blue_color {
     color: #00aeef;
+}
+
+.all_product_scroll_text {
+    position: absolute;
+    top: 1%;
+    right: -100%;
+    font-size: 8vw;
+    color: #afc0cc55;
+    font-weight: 800;
+    transition: 0.3s all;
+    white-space: nowrap;
+    width: 100%;
+    text-align: right;
 }
 
 /* all products end */
@@ -1624,6 +1639,10 @@ nav .logo_image {
     /* all products start */
     #ten_page .container {
         width: 92% !important;
+    }
+
+    .all_prod_row {
+        padding: 42px 0;
     }
 
     .all_product_video {
@@ -1912,6 +1931,7 @@ nav .logo_image {
     .home_content {
         /* padding: 0 20px; */
         padding: 0 92px;
+        padding: 0 58px;
         margin-top: 10rem;
         z-index: 123;
     }
@@ -2012,6 +2032,7 @@ nav .logo_image {
     .product_left_cont {
         width: 100%;
         padding: 3em !important;
+        padding: 3em 1rem !important;
     }
 
     .product_title_para .para_one {
@@ -2022,6 +2043,7 @@ nav .logo_image {
     #product_feature_mid_left,
     #product_feature_mid_right {
         font-size: 12px !important;
+        margin: 12px 0;
     }
 
     .product_feature_left_wrapper .product_feature,
@@ -2042,6 +2064,8 @@ nav .logo_image {
     .product_right_cont {
         width: 100%;
         padding: 3rem 26px !important;
+        padding: 5rem 26px !important;
+        padding-top: 2rem !important;
     }
 
     .product_content_title_right .product_right_title {
@@ -2069,6 +2093,8 @@ nav .logo_image {
 
     .product_right_cont .product_button_dark {
         margin-top: 30px;
+        margin-top: 16px;
+        width: 198px;
     }
 
     .second_page_cont .row {
